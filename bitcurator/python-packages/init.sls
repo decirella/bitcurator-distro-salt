@@ -1,4 +1,5 @@
 include:
+  - bitcurator.python-packages.pip
   - bitcurator.python-packages.analyzeMFT
   - bitcurator.python-packages.argparse
   - bitcurator.python-packages.configobj
@@ -9,7 +10,6 @@ include:
   - bitcurator.python-packages.lxml
   - bitcurator.python-packages.matplotlib
   - bitcurator.python-packages.pefile
-  - bitcurator.python-packages.pip
   - bitcurator.python-packages.python-dateutil
   - bitcurator.python-packages.python-evtx
   - bitcurator.python-packages.python-registry
@@ -22,6 +22,7 @@ bitcurator-python-packages:
   test.nop:
     - name: bitcurator-python-packages
     - require:
+      - sls: bitcurator.python-packages.pip
       - sls: bitcurator.python-packages.analyzeMFT
       - sls: bitcurator.python-packages.argparse
       - sls: bitcurator.python-packages.configobj
@@ -32,7 +33,6 @@ bitcurator-python-packages:
       - sls: bitcurator.python-packages.lxml
       - sls: bitcurator.python-packages.matplotlib
       - sls: bitcurator.python-packages.pefile
-      - sls: bitcurator.python-packages.pip
       - sls: bitcurator.python-packages.python-dateutil
       - sls: bitcurator.python-packages.python-evtx
       - sls: bitcurator.python-packages.python-registry

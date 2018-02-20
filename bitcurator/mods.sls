@@ -2,7 +2,6 @@ include:
   - bitcurator.repos
   - bitcurator.packages
   - bitcurator.python-packages
-  - bitcurator.tools
   - bitcurator.env
   - bitcurator.config
 
@@ -16,6 +15,5 @@ bitcurator-version-file:
       - sls: bitcurator.repos
       - sls: bitcurator.packages
       - sls: bitcurator.python-packages
-      - sls: bitcurator.tools
       - sls: bitcurator.env
       - sls: bitcurator.config
