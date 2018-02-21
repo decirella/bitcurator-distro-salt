@@ -1,5 +1,5 @@
 include:
-  - ..packages.python-pip
+  - easy-pip
 
 analyzeMFT:
   pip.installed:
@@ -8,4 +8,4 @@ analyzeMFT:
     - bin_env: '/usr/bin/pip3'
     - upgrade: True
     - require:
-      - pkg: python-pip
+      - cmd: easy-pip

@@ -1,11 +1,10 @@
 include:
   - ..packages.python-pip
 
-argparse:
+pip:
   pip.installed:
-    - name: argparse
+    - name: pip
     - reload_modules: True
-    - bin_env: '/usr/bin/pip3'
     - upgrade: True
     - require:
-      - cmd: easy-pip
+      - pkg: python-pip

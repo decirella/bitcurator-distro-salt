@@ -1,6 +1,6 @@
 include:
   - bitcurator.python-packages.pip
-  - bitcurator.python-packages.analyzeMFT
+  - bitcurator.python-packages.analyzemft
   - bitcurator.python-packages.argparse
   - bitcurator.python-packages.configobj
   - bitcurator.python-packages.construct
@@ -23,7 +23,7 @@ bitcurator-python-packages:
     - name: bitcurator-python-packages
     - require:
       - sls: bitcurator.python-packages.pip
-      - sls: bitcurator.python-packages.analyzeMFT
+      - sls: bitcurator.python-packages.analyzemft
       - sls: bitcurator.python-packages.argparse
       - sls: bitcurator.python-packages.configobj
       - sls: bitcurator.python-packages.construct
