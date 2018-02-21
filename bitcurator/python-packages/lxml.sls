@@ -6,6 +6,7 @@ include:
 lxml:
   pip.installed:
     - name: lxml
+    - reload_modules: True
     - bin_env: '/usr/bin/pip3'
     - upgrade: True
     - require:
