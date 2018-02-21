@@ -1,10 +1,6 @@
-include:
-  - ..packages.python-pip
-
 pip:
-  pip.installed:
-    - name: pip
-    - reload_modules: True
-    - upgrade: True
-    - require:
-      - pkg: python-pip
+  cmd:
+    - run
+    - cwd : /
+    - name: easy_install --script-dir=/usr/bin -U pip
+    - reload_modules: true
