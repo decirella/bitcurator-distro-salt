@@ -146,6 +146,7 @@ include:
   - bitcurator.packages.testdisk
   - bitcurator.packages.tree
   - bitcurator.packages.ubiquity-frontend-debconf
+  - bitcurator.packages.ubuntu-desktop
   - bitcurator.packages.udisks2
   - bitcurator.packages.unixodbc
   - bitcurator.packages.unixodbc-dev
@@ -309,6 +310,7 @@ bitcurator-packages:
       - sls: bitcurator.packages.testdisk
       - sls: bitcurator.packages.tree
       - sls: bitcurator.packages.ubiquity-frontend-debconf
+      - sls: bitcurator.packages.ubuntu-desktop
       - sls: bitcurator.packages.udisks2
       - sls: bitcurator.packages.unixodbc
       - sls: bitcurator.packages.unixodbc-dev
